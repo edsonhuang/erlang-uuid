@@ -1,7 +1,15 @@
 {application, uuid,
- [{description, "Erlang UUID"},
-  {vsn, "0.5.2"},
-  {modules, [uuid]},
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
   {registered, []},
-  {applications, [stdlib, crypto]},
-  {env, []}]}.
+  {mod, {uuid_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links, [{"GitHub", "https://github.com/edsonhuang/erlang-uuid.git"}]}
+ ]}.
